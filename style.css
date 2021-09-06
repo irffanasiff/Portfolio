@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100%;
+  background: #fff;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: larger;
+}
+p {
+  font-size: medium;
+}
+#inner_page_container {
+  padding: 10px;
+}
+#navbar {
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: space-between;
+}
+#section1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(30vh, auto);
+  /* margin-left: 10%;
+  margin-right: 10%; */
+}
+#section1__heading {
+  border: 2px solid rgb(255, 125, 64);
+  grid-column: 2/6;
+  grid-row: 1/2;
+}
+#section1__description {
+  border: 2px solid yellow;
+  grid-column: 2/6;
+  grid-row: 2/3;
+}
+#section1__logos {
+  border: 2px solid blue;
+  grid-column: 2/6;
+  grid-row: 3/4;
+}
+#section1__image {
+  border: 2px solid green;
+  grid-column: 8/12;
+  grid-row: 1/4;
+}
+#section2 {
+  border: 2px solid brown;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(20vh, auto);
+}
+#section2__education {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid khaki;
+  grid-area: 1 / 2 / 2 / 10;
+  border: 2px solid rgb(255, 73, 88);
+  background-color: salmon;
+}
+#section2__image1 {
+  border: 2px solid rgb(94, 255, 108);
+  grid-area: 1 / 11 / 2 / 13;
+}
+#section2__techstack {
+  border: 2px solid rgb(224, 89, 112);
+  grid-area: 3 / 2 / 7 / 12;
+}
+/*{ ---------------------------------- */
+#section3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1300px;
+  border: 2px solid rgb(22, 112, 27);
+}
+#section3_container {
+  width: 100%;
+  display: flex;
+  block-size: 1250px;
+  align-items: center;
+  justify-content: left;
+}
+
+#section3__container__timeline {
+  top: 9vh;
+  width: 80%;
+  height: 100%;
+  max-width: 200vw;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 50px;
+  border: 2px solid red;
+}
+
+#section3__container__timeline__ul {
+  list-style: none;
+}
+.section3__container__timeline__li__h1 {
+  color: rgb(0, 0, 0);
+  line-height: 30px;
+}
+.section3__container__timeline__li__h2 {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.section3__container__timeline__li__date {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.section3__container__timeline__li__h4 {
+  line-height: 25px;
+  margin-bottom: 40px;
+  width: 50vw;
+}
+
+/*! The query will trigger only for screens that are greater than 768px -- Laptop and Desktop Screens*/
+@media only screen and (min-width: 768px) {
+  #section3__container__timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 1250px;
+    background-color: rgb(0, 0, 0);
+  }
+  #section3__container__timeline__li {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  #section3__container__timeline__li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: -11.6%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    top: 0px;
+    border: 2px solid greenyellow;
+  }
+  .section3__container__timeline__li {
+    width: 90%;
+    float: right;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .section3__container__timeline__li__h1 {
+    left: 20px;
+  }
+  .section3__container__timeline__li__h2 {
+    left: 9px;
+  }
+  .section3__container__timeline__li__h4 {
+  }
+  .section3__container__timeline__li {
+    background-color: rgb(153, 153, 153);
+  }
+}
+
+/*{ -------------------------------------------- */
+
+/* for any width less than 425px(mobile) this will be triggered*/
+/*? If [device width] is less than or equal to 425px, then do {…} */
+@media only screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
+
+  #section1__heading {
+    border: 2px solid rgb(0, 170, 65);
+    grid-column: 2/10;
+    grid-row: 1/2;
+  }
+  #section1__description {
+    border: 2px solid rgb(2, 42, 116);
+    grid-column: 2/10;
+    grid-row: 2/3;
+  }
+  #section1__logos {
+    border: 2px solid rgb(165, 77, 42);
+    grid-column: 2/6;
+    grid-row: 5/6;
+  }
+  #section1__image {
+    border: 2px solid rgb(249, 62, 255);
+    grid-column: 2/10;
+    grid-row: 3/5;
+  }
+  #section2__education {
+    grid-area: 1 / 2 / 2 / 9;
+  }
+  #section2__image1 {
+    grid-area: 1 / 10 / 2 / 13;
+  }
+  #section2__techstack {
+    grid-area: 3 / 2 / 6 / 12;
+  }
+}
+/*! The query will trigger only for screens that are 758-425px wide -- tablet devices*/
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  /* code for tablets only */
+}
