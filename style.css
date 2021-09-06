@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Poppins;
+  text-align: left;
 }
 html,
 body {
@@ -33,9 +39,15 @@ p {
   margin-right: 10%; */
 }
 #section1__heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
   border: 2px solid rgb(255, 125, 64);
   grid-column: 2/6;
   grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 #section1__description {
   border: 2px solid yellow;
@@ -49,9 +61,33 @@ p {
 }
 #section1__image {
   border: 2px solid green;
-  grid-column: 8/12;
+  grid-column: 7/13;
   grid-row: 1/4;
 }
+#section1__image__image {
+  max-width: 75%;
+}
+#section1__heading__text__decoration1 {
+  background-color: red;
+  background-image: linear-gradient(45deg, #f59e0b, #ef4444);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+#section1__heading__text__decoration2 {
+  background-color: red;
+  background-image: linear-gradient(45deg, #5b21b6, #9d174d);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
 #section2 {
   border: 2px solid brown;
   display: grid;
@@ -87,7 +123,6 @@ p {
 #section3_container {
   width: 100%;
   display: flex;
-  block-size: 1250px;
   align-items: center;
   justify-content: left;
 }
@@ -97,6 +132,7 @@ p {
   width: 80%;
   height: 100%;
   max-width: 200vw;
+  block-size: 1250px;
   margin: 0 auto;
   position: relative;
   padding-bottom: 50px;
@@ -109,24 +145,28 @@ p {
 .section3__container__timeline__li__h1 {
   color: rgb(0, 0, 0);
   line-height: 30px;
+  border: 2px solid rgb(78, 78, 54);
 }
 .section3__container__timeline__li__h2 {
   line-height: 30px;
   margin-bottom: 10px;
+  border: 2px solid rgb(223, 223, 48);
 }
 .section3__container__timeline__li__date {
   margin-bottom: 20px;
   letter-spacing: 2px;
+  border: 2px solid rgb(243, 243, 159);
 }
 .section3__container__timeline__li__h4 {
   line-height: 25px;
   margin-bottom: 40px;
   width: 50vw;
+  border: 2px solid rgb(189, 189, 107);
 }
 
 /*! The query will trigger only for screens that are greater than 768px -- Laptop and Desktop Screens*/
 @media only screen and (min-width: 768px) {
-  #section3__container__timeline:before {
+  #section3__container__timeline::before {
     content: '';
     position: absolute;
     top: 0;
@@ -138,12 +178,12 @@ p {
     position: relative;
     margin-bottom: 50px;
   }
-  #section3__container__timeline__li::before {
+  .section3__container__timeline__li::before {
     content: '';
     position: absolute;
     height: 20px;
     width: 20px;
-    left: -11.6%;
+    left: -15%;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
     top: 0px;
@@ -164,7 +204,7 @@ p {
   .section3__container__timeline__li__h4 {
   }
   .section3__container__timeline__li {
-    background-color: rgb(153, 153, 153);
+    border: 3px solid rgb(134, 134, 190);
   }
 }
 
@@ -203,6 +243,9 @@ p {
     border: 2px solid rgb(249, 62, 255);
     grid-column: 2/10;
     grid-row: 3/5;
+  }
+  #section1__image__image {
+    width: 200px;
   }
   #section2__education {
     grid-area: 1 / 2 / 2 / 9;
