@@ -1,137 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Irfan</title>
-    <link rel="shortcut icon" href="./Images/Memoji_Boys.png" />
-  </head>
-  <body>
-    <div id="page_container">
-      <div id="inner_page_container">
-        <nav id="navbar">
-          <span id="navbar__resume"><h1>Resume</h1></span>
-          <span id="navbar__switch"><h1>🌙</h1></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <title>Irfan</title>
+  <link rel="shortcut icon" href="./Images/Memoji_Boys.png" />
+</head>
+
+<body>
+  <div id="page_container">
+    <div id="inner_page_container">
+
+      <section id="section1">
+        <nav id="section1__navbar">
+          <span id="section1__navbar__resume">
+            <h1>Resume</h1>
+          </span>
+          <span id="section1__navbar__switch">
+            <h1>🌙</h1>
+          </span>
         </nav>
-        <section id="section1">
-          <h1 id="section1__heading">
-            <span>
-              Hii! I’m Irfan Asif. Web
-              <span id="section1__heading__text__decoration1">Designer</span>
-              and Web
-              <span id="section1__heading__text__decoration2">Developer</span>
-            </span>
-          </h1>
-          <p id="section1__description">
-            I’m a 2nd year under graduate student who is enthusiastic about
-            tech. I am a full stack web devloper and currently learning DevOps
-          </p>
-          <div id="section1__logos">L1 L2 L3 L4</div>
-          <div id="section1__image">
-            <img
-              src="./Images/Man1.png"
-              alt="hero image"
-              id="section1__image__image"
-            />
-          </div>
-        </section>
-        <section id="section2">
-          <div id="section2__education">
-            <h1 id="section2__education_heading">Education</h1>
-            <h2 id="section2__education_collage">NIT Srinagar</h2>
-            <p id="section2__education_degree">B-Tech</p>
-            <p id="section2__education_date">Date</p>
-          </div>
-          <div id="section2__image1">Image</div>
-          <div id="section2__techstack">Tech Stac</div>
-        </section>
-        <section id="section3">
-          <div id="section3__container">
-            <div id="section3__container__timeline">
-              <ul id="section3__container__timeline__ul">
-                <li class="section3__container__timeline__li">
-                  <div class="section3__container__timeline__li__content">
-                    <h1 class="section3__container__timeline__li__h1">
-                      Heading 1
-                    </h1>
-                    <h2 class="section3__container__timeline__li__h2">
-                      Subheading 1
-                    </h2>
-                    <h3 class="section3__container__timeline__li__date">
-                      20th may, 2010
-                    </h3>
-                    <p class="section3__container__timeline__li__h4">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consectetur tempora ab laudantium voluptatibus aut eos
-                      placeat laborum, quibusdam exercitationem labore.
-                    </p>
-                  </div>
-                </li>
-                <li class="section3__container__timeline__li">
-                  <div class="section3__container__timeline__li__content">
-                    <h1 class="section3__container__timeline__li__h1">
-                      Heading 2
-                    </h1>
-                    <h2 class="section3__container__timeline__li__h2">
-                      Subheading 2
-                    </h2>
-                    <h3 class="section3__container__timeline__li__date">
-                      20th may, 2010
-                    </h3>
-                    <p class="section3__container__timeline__li__h4">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consectetur tempora ab laudantium voluptatibus aut eos
-                      placeat laborum, quibusdam exercitationem labore.
-                    </p>
-                  </div>
-                </li>
-                <li class="section3__container__timeline__li">
-                  <div class="section3__container__timeline__li__content">
-                    <h1 class="section3__container__timeline__li__h1">
-                      Heading 3
-                    </h1>
-                    <h2 class="section3__container__timeline__li__h2">
-                      Subheading 3
-                    </h2>
-                    <h3 class="section3__container__timeline__li__date">
-                      20th may, 2010
-                    </h3>
-                    <p class="section3__container__timeline__li__h4">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consectetur tempora ab laudantium voluptatibus aut eos
-                      placeat laborum, quibusdam exercitationem labore.
-                    </p>
-                  </div>
-                </li>
-                <li class="section3__container__timeline__li">
-                  <div class="section3__container__timeline__li__content">
-                    <h1 class="section3__container__timeline__li__h1">
-                      Heading 4
-                    </h1>
-                    <h2 class="section3__container__timeline__li__h2">
-                      Subheading 4
-                    </h2>
-                    <h3 class="section3__container__timeline__li__date">
-                      20th may, 2010
-                    </h3>
-                    <p class="section3__container__timeline__li__h4">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Consectetur tempora ab laudantium voluptatibus aut eos
-                      placeat laborum, quibusdam exercitationem labore.
-                    </p>
-                  </div>
-                </li>
-              </ul>
+        <h1 id="section1__heading">
+          <span>
+            Hii! I’m Irfan Asif. Web
+            <span id="section1__heading__text__decoration1">Designer</span>
+            and Web
+            <span id="section1__heading__text__decoration2">Developer</span>
+          </span>
+        </h1>
+        <p id="section1__description">
+          I’m a 2nd year under graduate student who is enthusiastic about
+          tech. I am a full stack web devloper and currently learning DevOps
+        </p>
+        <div id="section1__logos">L1 L2 L3 L4</div>
+        <div id="section1__image">
+          <img src="./Images/Man1.png" alt="hero image" id="section1__image__image" />
+        </div>
+      </section>
+      <section id="section2">
+        <div id="section2__education">
+          <h1 id="section2__education_heading">
+            <div style="border: 2px solid black" id="section2__container1">
+
+              <h1 id='section2__container1__headline'>
+                <span id='section2__container1__headline__visuallyhidden'>Education</span>
+                <svg
+                  aria-hidden='true'
+                  id='lockup-headline-mask'
+                  class='headline lockup-headline-mask visually-hidden'
+                >
+                  <clipPath id='lockup-headline-mask-path'>
+                    <text
+                      dominant-baseline='hanging'
+                      text-anchor='middle'
+                      x='50%'
+                      y='0em'
+                      dy='0.125em'
+                    >
+                      Education
+                    </text>
+                  </clipPath>
+                </svg>
+              </h1>
+
             </div>
-            <img src="./Images/Man2.png" alt="human2" style="width: 100px" />
+          </h1>
+          <h2 id="section2__education_collage">NIT Srinagar</h2>
+          <p id="section2__education_degree">B-Tech</p>
+          <p id="section2__education_date">Date</p>
+        </div>
+        <div id="section2__image1">Image</div>
+        <div id="section2__techstack">Tech Stac</div>
+      </section>
+      <section id="section3">
+        <div id="section3__container">
+          <div id="section3__container__timeline">
+            <ul id="section3__container__timeline__ul">
+              <li class="section3__container__timeline__li">
+                <div class="section3__container__timeline__li__content">
+                  <h1 class="section3__container__timeline__li__h1">
+                    Heading 1
+                  </h1>
+                  <h2 class="section3__container__timeline__li__h2">
+                    Subheading 1
+                  </h2>
+                  <h3 class="section3__container__timeline__li__date">
+                    20th may, 2010
+                  </h3>
+                  <p class="section3__container__timeline__li__h4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="section3__container__timeline__li">
+                <div class="section3__container__timeline__li__content">
+                  <h1 class="section3__container__timeline__li__h1">
+                    Heading 2
+                  </h1>
+                  <h2 class="section3__container__timeline__li__h2">
+                    Subheading 2
+                  </h2>
+                  <h3 class="section3__container__timeline__li__date">
+                    20th may, 2010
+                  </h3>
+                  <p class="section3__container__timeline__li__h4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="section3__container__timeline__li">
+                <div class="section3__container__timeline__li__content">
+                  <h1 class="section3__container__timeline__li__h1">
+                    Heading 3
+                  </h1>
+                  <h2 class="section3__container__timeline__li__h2">
+                    Subheading 3
+                  </h2>
+                  <h3 class="section3__container__timeline__li__date">
+                    20th may, 2010
+                  </h3>
+                  <p class="section3__container__timeline__li__h4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+              <li class="section3__container__timeline__li">
+                <div class="section3__container__timeline__li__content">
+                  <h1 class="section3__container__timeline__li__h1">
+                    Heading 4
+                  </h1>
+                  <h2 class="section3__container__timeline__li__h2">
+                    Subheading 4
+                  </h2>
+                  <h3 class="section3__container__timeline__li__date">
+                    20th may, 2010
+                  </h3>
+                  <p class="section3__container__timeline__li__h4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur tempora ab laudantium voluptatibus aut eos
+                    placeat laborum, quibusdam exercitationem labore.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!-- <section id="section4">section 4</section>
-      <section id="section5">section 5</section>
-      <footer id="footer"></footer> -->
-      </div>
+          <img src="./Images/Man2.png" alt="human2" style="width: 100px" id="section3__container__image" />
+        </div>
+      </section>
+      <section id="section4">
+           <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+              <div class="swiper-pagination"></div>
+           </div> 
+      </section>
+      <section id="section5">
+        <article class="section5__card">
+          <header class="section5__card__header">
+            <p>May 25th 2020</p>
+            <h2>
+              card trics are fun. Yes they are
+            </h2>
+          </header>
+        </article>
+        <article class="section5__card">
+          <header class="section5__card__header">
+            <p>May 25th 2020</p>
+            <h2>
+              card trics are fun. Yes they are
+            </h2>
+          </header>
+        </article>
+        <article class="section5__card">
+          <header class="section5__card__header">
+            <p>May 25th 2020</p>
+            <h2>
+              card trics are fun. Yes they are
+            </h2>
+          </header>
+        </article>
+        <article class="section5__card">
+          <header class="section5__card__header">
+            <p>May 25th 2020</p>
+            <h2>
+              card trics are fun. Yes they are
+            </h2>
+          </header>
+        </article>
+      </section>
+      <footer id="footer">Footer</footer>
     </div>
-  </body>
+  </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+</body>
+
 </html>

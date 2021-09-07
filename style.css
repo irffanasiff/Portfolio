@@ -13,56 +13,64 @@ body {
   background: #fff;
   color: #000;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: larger;
+
+:root {
+  /* code here */
 }
-p {
-  font-size: medium;
-}
+
 #inner_page_container {
   padding: 10px;
-}
-#navbar {
-  border: 2px solid greenyellow;
+  border: 2px solid black;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 #section1 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(30vh, auto);
+  grid-auto-rows: minmax(12vh, auto);
   /* margin-left: 10%;
   margin-right: 10%; */
 }
+#section1__navbar {
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2/12;
+  grid-row: 1/2;
+  padding-top: 30px;
+}
 #section1__heading {
-  font-size: 36px;
+  font-size: min (18px);
+  font-size: 10%;
+  font-size: max (28px);
   font-weight: 700;
   line-height: 45px;
   border: 2px solid rgb(255, 125, 64);
   grid-column: 2/6;
-  grid-row: 1/2;
+  grid-row: 2/3;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  margin-top: 8rem;
+  max-width: 30rem;
+  position: relative;
 }
 #section1__description {
-  border: 2px solid yellow;
-  grid-column: 2/6;
-  grid-row: 2/3;
+  grid-column: 2/7;
+  grid-row: 3/4;
+  position: relative;
+  top: 10px;
 }
 #section1__logos {
   border: 2px solid blue;
   grid-column: 2/6;
-  grid-row: 3/4;
+  grid-row: 4/5;
+  padding-top: 20px;
 }
 #section1__image {
   border: 2px solid green;
   grid-column: 7/13;
-  grid-row: 1/4;
+  grid-row: 2/6;
 }
 #section1__image__image {
   max-width: 75%;
@@ -87,7 +95,29 @@ p {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
+/*^ --------------------section2------------------- */
+#section2__container1 {
+  height: auto;
+  display: flex;
+  position: relative;
+}
+#section2__container1__headline {
+  position: relative;
+  align-self: flex-start;
+  width: 40vw;
+  font-family: Roboto;
+  font-size: 54px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.1);
+  clip-path: url(#lockup-headline-mask-path);
+}
+#section2__container1__headline__visuallyhidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 #section2 {
   border: 2px solid brown;
   display: grid;
@@ -101,7 +131,6 @@ p {
   border: 2px solid khaki;
   grid-area: 1 / 2 / 2 / 10;
   border: 2px solid rgb(255, 73, 88);
-  background-color: salmon;
 }
 #section2__image1 {
   border: 2px solid rgb(94, 255, 108);
@@ -117,7 +146,7 @@ p {
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  height: 1300px;
+  height: 1350px;
   border: 2px solid rgb(22, 112, 27);
 }
 #section3_container {
@@ -163,7 +192,80 @@ p {
   width: 50vw;
   border: 2px solid rgb(189, 189, 107);
 }
+#section3__container__image {
+  border: 2px solidrgb(35, 250, 125) d;
+}
+/* {-------------------section 4------------ */
+#section4 {
+  position: relative;
+  border: 5px solid mediumvioletred;
+  display: flex;
+  height: 40rem;
+  width: 100%;
+  padding-bottom: 10rem;
+}
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*{ -------------section5-------------- */
+
+#section5 {
+  background-color: #17141d;
+  color: white;
+  height: 500px;
+  border: 2px solid green;
+  display: flex;
+}
+
+.section5__card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background-color: #17141d;
+  box-shadow: -1rem 0 3rem black;
+}
+
+/*{ ------------------footer----------------------*/
+
+#footer {
+  height: 200px;
+  border: 2px solid yellow;
+}
 /*! The query will trigger only for screens that are greater than 768px -- Laptop and Desktop Screens*/
 @media only screen and (min-width: 768px) {
   #section3__container__timeline::before {
@@ -208,7 +310,7 @@ p {
   }
 }
 
-/*{ -------------------------------------------- */
+/*{ --------------------MOBILE------------------------ */
 
 /* for any width less than 425px(mobile) this will be triggered*/
 /*? If [device width] is less than or equal to 425px, then do {…} */
@@ -223,25 +325,34 @@ p {
   p {
     font-size: small;
   }
-
+  #section1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(15vh, auto);
+    /* margin-left: 10%;
+    margin-right: 10%; */
+  }
   #section1__heading {
-    border: 2px solid rgb(0, 170, 65);
     grid-column: 2/10;
     grid-row: 1/2;
+    /* font-size: 24px; */
+    font-weight: 600;
+    margin-top: 4rem;
+    line-height: 35px;
   }
   #section1__description {
     border: 2px solid rgb(2, 42, 116);
-    grid-column: 2/10;
+    grid-column: 2/12;
     grid-row: 2/3;
   }
   #section1__logos {
     border: 2px solid rgb(165, 77, 42);
-    grid-column: 2/6;
+    grid-column: 2/8;
     grid-row: 5/6;
   }
   #section1__image {
     border: 2px solid rgb(249, 62, 255);
-    grid-column: 2/10;
+    grid-column: 2/13;
     grid-row: 3/5;
   }
   #section1__image__image {
@@ -256,8 +367,36 @@ p {
   #section2__techstack {
     grid-area: 3 / 2 / 6 / 12;
   }
+  .swiper-slide {
+    font-size: 20px;
+    border-radius: 14px;
+  }
+  #section3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1400px;
+    border: 2px solid rgb(22, 112, 27);
+  }
+  #section4 {
+    position: relative;
+    border: 2px solid mediumvioletred;
+    display: flex;
+    top: 122px;
+    height: 180px;
+    width: 130vw;
+  }
 }
-/*! The query will trigger only for screens that are 758-425px wide -- tablet devices*/
+/*{!} The query will trigger only for screens that are 758-425px wide -- tablet devices*/
 @media only screen and (max-width: 768px) and (min-width: 425px) {
   /* code for tablets only */
+  #section1__heading {
+    border: 2px solid rgb(0, 170, 65);
+    /* font-size: 28px; */
+    font-weight: 600;
+    line-height: 40px;
+  }
+  #section1__description {
+    top: 10px;
+  }
 }
